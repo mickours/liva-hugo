@@ -8,7 +8,7 @@
       class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4">
     {{ end }}
     <p>{{ .Summary }}</p>
-    <a href="{{ .Permalink }}" class="btn btn-outline-primary">Know More</a>
+    <a href="{{ .Permalink }}" class="btn btn-outline-primary">En Savoir Plus</a>
     {{ end }}
   </div>
   <!-- category -->
@@ -39,18 +39,5 @@
     </ul>
     {{- end }}
     {{- end }}
-  </div>
-  <!-- social -->
-  <div class="widget">
-    <h4 class="widget-title">Social</h4>
-    <ul class="list-inline social-links">
-      {{ range .Site.Params.social }}
-      <li class="list-inline-item"><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
-      {{ end }}
-    </ul>
-  </div>
-  <!-- advertisement -->
-  <div class="widget">
-    <img src="{{`images/promotion.png` | absURL}}" alt="" class="img-fluid">
   </div>
 </div>
